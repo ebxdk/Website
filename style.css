@@ -1,22 +1,33 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-    background-color: #f7f7f7;
+    line-height: 1.6;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
 header {
-    background-color: #2C3E50;
-    color: white;
-    padding: 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 30px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 header .logo img {
@@ -26,96 +37,185 @@ header .logo img {
 nav ul {
     list-style: none;
     display: flex;
+    gap: 30px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
+    color: #ecf0f1;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #e74c3c;
+}
+
+/* Hero Section */
 .hero {
+    background: url('karak-chai-hero.jpg') no-repeat center center/cover;
     color: white;
+    padding: 120px 20px;
     text-align: center;
-    padding: 100px 20px;
+    background-attachment: fixed;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 60px;
     margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 30px;
+    font-style: italic;
 }
 
 .cta-button {
-    background-color: #E74C3C;
+    background-color: #e74c3c;
     color: white;
-    padding: 15px 30px;
+    padding: 15px 40px;
     font-size: 18px;
-    text-decoration: none;
     border-radius: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
 }
 
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+/* Menu Section */
 .menu {
-    padding: 60px 20px;
-    background-color: #ECF0F1;
+    padding: 80px 20px;
     text-align: center;
+    background-color: #ecf0f1;
 }
 
 .menu h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: bold;
 }
 
 .menu-items {
     display: flex;
     justify-content: center;
     gap: 40px;
+    margin-top: 50px;
 }
 
 .menu-item {
-    text-align: center;
-    width: 200px;
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
 }
 
 .menu-item img {
     width: 100%;
-    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ecf0f1;
 }
 
+.menu-item h3 {
+    font-size: 24px;
+    padding: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.menu-item p {
+    padding: 0 20px 20px;
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+/* About Section */
 .about {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #BDC3C7;
-}
-
-.testimonials {
-    padding: 60px 20px;
-    background-color: #2C3E50;
+    padding: 80px 20px;
+    background-color: #34495e;
     color: white;
     text-align: center;
 }
 
-.testimonial {
-    margin: 20px 0;
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #ecf0f1;
     font-style: italic;
 }
 
-footer {
-    padding: 20px;
-    background-color: #34495E;
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 20px;
+    background-color: #2c3e50;
     color: white;
     text-align: center;
 }
 
+.testimonials h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.testimonial {
+    margin-bottom: 30px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    font-style: italic;
+    color: #ecf0f1;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Footer Section */
+footer {
+    padding: 40px 20px;
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
 footer a {
-    color: #E74C3C;
-    text-decoration: none;
+    color: #e74c3c;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
 }
