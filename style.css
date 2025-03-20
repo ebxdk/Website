@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    background: url('karak-chai-hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #E74C3C;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.menu {
+    padding: 60px 20px;
+    background-color: #ECF0F1;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu-item {
+    text-align: center;
+    width: 200px;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #BDC3C7;
+}
+
+.testimonials {
+    padding: 60px 20px;
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+}
+
+.testimonial {
+    margin: 20px 0;
+    font-style: italic;
+}
+
+footer {
+    padding: 20px;
+    background-color: #34495E;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: #E74C3C;
+    text-decoration: none;
+}
